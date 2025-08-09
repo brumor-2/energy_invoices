@@ -1,4 +1,4 @@
-# ⚡ Energy Invoices – Electricity Bill Processing (Python)
+# Energy Invoices – Electricity Bill Processing (Python)
 
 [🇧🇷 Read in Portuguese](https://github.com/brumor-2/energy_invoices/blob/main/README-pt.md)
 
