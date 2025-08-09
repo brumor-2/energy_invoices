@@ -1,22 +1,37 @@
-# energy_invoices
-This project is specific to handle with a list of Energy Invoices of 70 schools. 
+# ⚡ Energy Invoices – Electricity Bill Processing (Python)
 
-The system analyses throught a folder of PDF files, renames them accordining to school name order, and instalation numbers. 
+[🇧🇷 Read in Portuguese](./README-pt.md)
 
-After, it creates an Excel table with its information, values and sum of the values in the end. The files pattern follows for the company ENEL.
+This project automates the processing of electricity bills (PDF format) from ENEL for 70 schools.  
+The script scans a specific folder for PDF files, renames each file according to the school's name and installation number, extracts the invoice amounts, and generates an Excel spreadsheet with a summary and total value.
 
-If you want to try, you need to adapt some changes for this program, since I didn't put sensible information regarding school name, and it also depends on the 
-PDF file specifics you're using. The annotations are in portuguese, since the context and the files I'm using for this program is based on a brazilian energy company.
---------------------------------------------------------------------------------------
+---
 
-PT-BR
-Esse projeto lida com 70 faturas de energia elétrica de diferentes escolas, da companhia de energia elétrica ENEL.
+## Technologies Used
+- Python  
+- Pandas (Excel manipulation and export)  
+- `os`, `re`, `openpyxl` or equivalent libraries for file handling and PDF parsing  
 
-O sistema extrai dados de arquivos de PDF dentro de uma pasta específica, renomeia-os de acordo com o número da escola, nome da escola, e número da instalação. A base 
-para a renomeação dos arquivos é comparar o número da instalação nas faturas de acordo com o nome e número de escola fornecidos manualmente ao programa na lista.
+---
 
-Depois disso, o programa cria um arquivo excel com as informações, valores das faturas e a soma total das faturas ao final.
+## What I Learned
+- **Batch file renaming** with a custom mapping based on school and installation number  
+- **Data extraction from semi-structured PDF documents**  
+- **Data consolidation in Excel**, including total calculations  
+- **Real-world Python scripting**, combining file handling, data parsing, and automation  
+- **Clear documentation** for reproducibility and adaptation to other contexts  
 
-Para utilização desse programa, será necessário adaptar algumas mudanças, já que não foi incluído informações sensíveis como número de instalação e nome das escolas,
-assim como também depende das especificidades do arquivo PDF que você esteja utilizando.
+---
 
+## How to Use
+1. Place all PDF bills in the `input_pdfs/` folder.
+2. Adjust the mapping in `energy_invoices_base.py` to match your school/installation data.
+3. Run:
+   ```bash
+   python energy_invoices_base.py
+The output.xlsx file will be generated with renamed files and a consolidated spreadsheet.
+
+⚠️ Notes
+You must adapt the school mapping for your own use — sensitive data is not included in this repository.
+
+The PDF pattern must match the ENEL invoice format for the extraction to work correctly.
