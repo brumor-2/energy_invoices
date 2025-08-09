@@ -1,6 +1,6 @@
 # ⚡ Energy Invoices – Electricity Bill Processing (Python)
 
-[🇧🇷 Read in Portuguese](./README-pt.md)
+[🇧🇷 Read in Portuguese](https://github.com/brumor-2/energy_invoices/blob/main/README-pt.md)
 
 This project automates the processing of electricity bills (PDF format) from ENEL for 70 schools.  
 The script scans a specific folder for PDF files, renames each file according to the school's name and installation number, extracts the invoice amounts, and generates an Excel spreadsheet with a summary and total value.
