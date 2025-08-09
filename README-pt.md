@@ -1,6 +1,6 @@
-# ⚡ Energy Invoices – Processamento de Faturas de Energia (Python)
+# Energy Invoices – Processamento de Faturas de Energia (Python)
 
-[🇬🇧 Read in English](./README.md)
+[Read in English](https://github.com/brumor-2/energy_invoices/blob/main/README.md)
 
 Este projeto automatiza o processamento de faturas de energia elétrica (formato PDF) da ENEL para 70 escolas.  
 O script busca arquivos PDF em uma pasta específica, renomeia cada arquivo de acordo com o nome e número de instalação da escola, extrai os valores das faturas e gera uma planilha Excel com o resumo e o valor total.
